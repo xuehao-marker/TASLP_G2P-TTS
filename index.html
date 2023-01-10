@@ -100,17 +100,9 @@ Scottish phonetic lexicon of 5k words. <br>
 Dur AM except that the G2P model is fine-tuned with
 a General Australian phonetic lexicon of 5k words. <br>
             <b>Note</b>: The TTS system followed with ’-L’ denotes using only a small accented phonetic lexicon, with ’-S’ denotes using only limited accented speech data, and with
-’-LS’ denotes using both of them. 
+’-LS’ denotes using both of them. We study two scenarios on the accented TTS framework, a) only a small accented phonetic lexicon is available for the target accent. b) both a small accented phonetic lexicon and limited accented speech samples are available for the target accent.
           </p> <hr>
           
-          <p>
-                  There are three types of adaptation implemented for all three systems:<br>
-                  (1) <b>CN-Apt</b>: Adaptation of average model conditioned on speaker embedding using Mandarin utterances<br>
-                  (2) <b>EN-Apt</b>: Adaptation of average model conditioned on speaker embedding using English utterances.<br>
-                  (3) <b>MIX-Apt</b>: Adaptation of average model conditioned on speaker embedding using Mandarin and English utterances.<br>
-                  <b>Note</b>: I-vec refers to average model conditioned on speaker embedding without adaptation (only for proposed CLWE system).
-                </p>
-          <hr>
                 <p>
                   Code-switching speech are generated from CN, EN, MIX adapted systems respectively. (Text: 十二月三日晚的香港 music zone 是收官之站)
                 <p>
